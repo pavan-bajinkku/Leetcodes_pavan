@@ -146,5 +146,13 @@ class Solution:
             total.append(int(i))
         return total
 
+169 . Majority Element.
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        
+        c=Counter(nums)
+        v=c.most_common()
+        return(v[0][0])
 
 
